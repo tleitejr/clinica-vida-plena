@@ -1,74 +1,75 @@
-# Trilha HTML - Dio.me
-## Módulo 02 - HTML I - Conceitos Básicos
+# Clínica Vida Plena
 
-Este desafio tem como objetivo, criar um site "quase" completo, com tudo o que vimos neste módulo. Os temas que deverão ser abordados são:
-- Formulários
-- Estruturação e formatação de texto
-- Mídias
-- Tabelas
+Site institucional fictício de uma clínica médica (Clínica Geral e Pediatria), feito apenas com **HTML5** e estilos básicos em uma tag `<style>`, sem CSS externo e sem JavaScript.
 
-Além de outros recursos falados nas aulas!
+> **Este projeto é um fork** de [digitalinnovationone/trilha-html-modulo-2](https://github.com/digitalinnovationone/trilha-html-modulo-2).
+> Substitua o link acima pelo endereço do repositório de origem.
+> Este fork mantém o objetivo do projeto original (exercício de HTML) e traz a implementação da Clínica Vida Plena.
 
-## Instruções
-1. Você deve criar um site de uma clínica médica (você escolhe a especialidade)
-2. Este site deve conter o seguinte menu de navegação:
-    - Página Principal
-    - Sobre a clínica
-    - Horário de Atendimento
-    - Contato
-3. Deve, obrigatoriamente, utilizar todas os assuntos abordados nas aulas.
+## Sobre o projeto
 
-Abaixo como cada página deve ser criada e estruturada.
+O projeto nasceu de um desafio de front-end: criar um site "quase" completo usando somente HTML, abordando obrigatoriamente **formulários**, **estruturação e formatação de texto**, **mídias** e **tabelas**. Todos os dados (nome da clínica, equipe, telefones, CNPJ e endereço) são fictícios.
 
-### Estrutura das páginas
+## Páginas
 
-Todas as páginas terão que seguir um padrão pré-definido. Como não aprendemos sobre CSS ainda, utilize o arquivo `template.html` para utilizar como base. Ele segue uma estrutura semelhante a image abaixo.
+| Arquivo | Página | Conteúdo |
+|---|---|---|
+| `index.html` | Página Principal | Missão, diferenciais, especialidades, vídeo do YouTube e áudio |
+| `sobre.html` | Sobre a clínica | História, valores, equipe e estrutura, com formatação de texto variada |
+| `horario.html` | Horário de Atendimento | Texto sobre os serviços e tabela de horários |
+| `contato.html` | Contato | Telefones, endereço, mapa do Google e formulário de contato |
 
-![Estrutura](https://i.stack.imgur.com/9jI6f.gif)
+Todas as páginas compartilham o mesmo template: **menu** no topo, **header** com imagem própria, **conteúdo** específico e **footer** com os dados de contato.
 
-\* _No template tem algumas cores mas é apenas para melhor visualização. Fique a vontade para alterar da melhor forma._
+## Recursos de HTML utilizados
 
-No **Menu**, ficará localizado o menu de navegação (ah vá!), no **Header** de cada página ficará uma imagem, no **Footer** informações de contato, e o **Content** é o conteúdo de cada página.
-### Página Principal
-1. Deve ter uma imagem no **Header**.
-2. Em **Content** uma breve descrição sobre a clínica.
-3. **Menu** e **Footer** padrões em todas as páginas.
+- **Estrutura semântica:** `<header>`, `<nav>`, `<main>`, `<section>`, `<footer>`, `<address>`
+- **Texto:** `<h1>` a `<h2>`, `<p>`, `<strong>`, `<em>`, `<mark>`, `<sub>`, `<blockquote>`, listas `<ul>` e `<ol>`
+- **Mídia:** `<img>` com `alt`, `<figure>` e `<figcaption>`, `<audio>`, `<iframe>` do YouTube
+- **Tabela:** `<table>`, `<caption>`, `<thead>`, `<tbody>`, `<th scope>` e `<td>`
+- **Formulário:** `<form method="post" action="#">`, `<label>` associado a cada campo, `<input type="text">`, `<input type="email">`, `<textarea>`, `required`, `placeholder`, botões `submit` e `reset`
+- **Mapa:** `<iframe>` do Google Maps com `width`, `height`, `allowfullscreen`, `loading="lazy"` e `title`
 
-### Sobre a clínica
-1. Deve ter uma imagem diferente no **Header**.
-2. Em **Content** um texto falando sobre a clínica.
-3. **Menu** e **Footer** padrões em todas as páginas.
+## Estrutura de arquivos
 
-### Horário de Atendimento
-1. Deve ter uma imagem diferente no **Header**.
-2. Em **Content** um pequeno texto falando sobre os serviços, e uma tabela de preços, onde cada linha é um serviço, com o preço de cada um de acordo com os dias da semana.
+```
+clinica-vida-plena/
+├── index.html
+├── sobre.html
+├── horario.html
+├── contato.html
+└── README.md
+```
 
-|Serviços |Segunda a Sexta | Sábados | Feriados |
-|---|---|---|---|
-|Clínica geral | 08h - 19h  | 08h - 14h | 08h - 14h  |
-|Psicologia | 08h - 19h  | 08h - 14h | 08h - 14h  |
-|Pediatria | 08h - 19h  | 08h - 18h | - |
-|Oftalmologia | 08h - 19h  | 08h - 18h | - |
-|||||
+## Como executar
 
-3. **Menu** e **Footer** padrões em todas as páginas.
+1. Clone o repositório (ou baixe os arquivos):
+   ```bash
+   git clone https://github.com/tleitejr/clinica-vida-plena.git
+   cd clinica-vida-plena
+   ```
+2. Abra o arquivo `index.html` no navegador (clique duas vezes ou use "Abrir com").
+3. Navegue pelas páginas usando o menu.
 
+Não é preciso instalar nada. É necessário ter internet para carregar as imagens de placeholder, o vídeo, o áudio e o mapa.
 
-### Contato
-1. Deve ter uma imagem diferente no **Header**.
-2. Em **Content** deve ter:
-    - Os telefones de contato (celular e whatsapp)
-    - Endereço completo da clínica
-    - Um Iframe com o Google Maps apontando o endereço da clínica
-    - Um formulário de contato com:
-        - Nome (type="text")
-        - E-mail (type="email")
-        - Assunto (type="text")
-        - Mensagem (textarea)
-        - Botões de envias e limpar formulário
+## Personalização
 
-3. **Menu** e **Footer** padrões em todas as páginas.
+- **Imagens:** os headers usam `https://placehold.co/`. Troque o `src` por imagens reais da clínica.
+- **Vídeo:** altere o código no final da URL do `<iframe>` do YouTube em `index.html`.
+- **Áudio:** substitua o arquivo de exemplo no `<source>` em `index.html`.
+- **Endereço e mapa:** edite o endereço no footer e o parâmetro `q=` do `<iframe>` em `contato.html`.
+- **Cores:** ajuste as variáveis em `:root` na tag `<style>` de cada arquivo.
 
-Desafio está lançado! Com tudo que aprendemos no Módulo II é perfeitamente possível criar este site! 
+## Limitações
 
-Bora pra cima!
+- O formulário usa `action="#"` e não envia dados a nenhum servidor.
+- O CSS está repetido em cada página, porque o desafio não permite CSS externo.
+
+## Mantendo o fork atualizado
+
+```bash
+git remote add upstream https://github.com/digitalinnovationone/trilha-html-modulo-2.git
+git fetch upstream
+git merge upstream/main
+```

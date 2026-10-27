@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contato | Clínica Vida Plena</title>
+  <style>
+    :root { --verde:#1f5f5b; --verde-claro:#e4f1ee; --amarelo:#f2b84b; --texto:#22302f; --borda:#c5dad6; }
+    * { box-sizing: border-box; }
+    body { margin:0; font-family: Verdana, Geneva, sans-serif; color:var(--texto); background:#fbfdfc; line-height:1.65; }
+    nav { background:var(--verde); }
+    nav ul { list-style:none; margin:0 auto; padding:0; max-width:1100px; display:flex; flex-wrap:wrap; }
+    nav a { display:block; padding:16px 22px; color:#fff; text-decoration:none; font-weight:bold; }
+    nav a:hover, nav a:focus, nav a[aria-current="page"] { background:var(--amarelo); color:#1b2928; }
+    header img { display:block; width:100%; max-height:300px; object-fit:cover; }
+    header h1 { margin:0; padding:22px 20px; text-align:center; background:var(--verde-claro); font-family:Georgia, serif; font-size:2rem; color:var(--verde); }
+    main { max-width:1000px; margin:0 auto; padding:30px 20px; }
+    h2 { font-family:Georgia, serif; color:var(--verde); border-bottom:3px solid var(--amarelo); padding-bottom:6px; }
+    section { margin-bottom:34px; }
+    blockquote { margin:20px 0; padding:12px 20px; background:var(--verde-claro); border-left:6px solid var(--verde); font-style:italic; }
+    figure { margin:20px 0; text-align:center; }
+    figure img, iframe { max-width:100%; border:1px solid var(--borda); }
+    figcaption { font-size:.9rem; color:#4d6361; }
+    table { width:100%; border-collapse:collapse; margin:16px 0; }
+    caption { text-align:left; font-weight:bold; padding-bottom:8px; }
+    th, td { border:1px solid var(--borda); padding:12px; text-align:center; }
+    thead th { background:var(--verde); color:#fff; }
+    tbody th { background:var(--verde-claro); text-align:left; }
+    tbody tr:nth-child(even) td { background:#f3f9f8; }
+    form { max-width:620px; }
+    label { display:block; margin-top:14px; font-weight:bold; }
+    input[type="text"], input[type="email"], textarea { width:100%; padding:10px; border:1px solid var(--borda); border-radius:4px; font:inherit; }
+    button { margin:18px 10px 0 0; padding:11px 26px; border:0; border-radius:4px; font:inherit; font-weight:bold; cursor:pointer; background:var(--verde); color:#fff; }
+    button[type="reset"] { background:var(--amarelo); color:#1b2928; }
+    footer { background:var(--verde); color:#fff; padding:28px 20px; }
+    footer .rodape { max-width:1000px; margin:0 auto; display:flex; flex-wrap:wrap; gap:30px; justify-content:space-between; }
+    footer h2 { color:#fff; border:0; font-size:1.1rem; margin:0 0 6px; }
+    footer address { font-style:normal; }
+    footer a { color:var(--amarelo); }
+    footer small { display:block; text-align:center; margin-top:20px; }
+  </style>
+</head>
+<body>
+  <nav aria-label="Menu principal">
+    <ul>
+      <li><a href="index.html">Página Principal</a></li>
+      <li><a href="sobre.html">Sobre a clínica</a></li>
+      <li><a href="horario.html">Horário de Atendimento</a></li>
+      <li><a href="contato.html" aria-current="page">Contato</a></li>
+    </ul>
+  </nav>
+
+  <header>
+    <img src="https://placehold.co/1200x300/1f5f5b/ffffff?text=Fale+Conosco" alt="Imagem ilustrativa de recepcionista atendendo ao telefone" width="1200" height="300">
+    <h1>Contato</h1>
+  </header>
+
+  <main>
+    <section>
+      <h2>Fale com a gente</h2>
+      <ul>
+        <li><strong>Celular:</strong> <a href="tel:+5511900000000">(11) 90000-0000</a></li>
+        <li><strong>WhatsApp:</strong> <a href="https://wa.me/5511900000000">(11) 90000-0000</a></li>
+        <li><strong>Telefone fixo:</strong> <a href="tel:+551130000000">(11) 3000-0000</a></li>
+      </ul>
+    </section>
+
+    <section>
+      <h2>Endereço</h2>
+      <address>Clínica Vida Plena<br>Av. Paulista, 1000 – Bela Vista<br>São Paulo – SP, CEP 01310-100</address>
+      <figure>
+        <iframe src="https://www.google.com/maps?q=Av.+Paulista,+1000,+S%C3%A3o+Paulo&output=embed" width="100%" height="350" style="border:0;" allowfullscreen loading="lazy" referrerpolicy="no-referrer-when-downgrade" title="Mapa com a localização da Clínica Vida Plena na Av. Paulista, 1000, São Paulo"></iframe>
+        <figcaption>Localização da clínica (endereço fictício).</figcaption>
+      </figure>
+    </section>
+
+    <section>
+      <h2>Envie uma mensagem</h2>
+      <form method="post" action="#">
+        <label for="nome">Nome</label>
+        <input type="text" id="nome" name="nome" placeholder="Seu nome completo" required>
+
+        <label for="email">E-mail</label>
+        <input type="email" id="email" name="email" placeholder="voce@exemplo.com" required>
+
+        <label for="assunto">Assunto</label>
+        <input type="text" id="assunto" name="assunto" placeholder="Sobre o que deseja falar?" required>
+
+        <label for="mensagem">Mensagem</label>
+        <textarea id="mensagem" name="mensagem" rows="6" placeholder="Escreva sua mensagem aqui" required></textarea>
+
+        <button type="submit">Enviar</button>
+        <button type="reset">Limpar</button>
+      </form>
+    </section>
+  </main>
+
+  <footer>
+    <div class="rodape">
+      <div>
+        <h2>Clínica Vida Plena</h2>
+        <p>Cuidando de você e da sua família.<br>CNPJ fictício: 00.000.000/0001-00</p>
+      </div>
+      <div>
+        <h2>Contato</h2>
+        <address>
+          Telefone: <a href="tel:+551130000000">(11) 3000-0000</a><br>
+          Celular: <a href="tel:+5511900000000">(11) 90000-0000</a><br>
+          WhatsApp: <a href="https://wa.me/5511900000000">(11) 90000-0000</a><br>
+          E-mail: <a href="mailto:contato@vidaplena.example">contato@vidaplena.example</a>
+        </address>
+      </div>
+      <div>
+        <h2>Endereço</h2>
+        <address>Av. Paulista, 1000 – Bela Vista<br>São Paulo – SP, 01310-100</address>
+      </div>
+    </div>
+    <small>&copy; 2026 Clínica Vida Plena. Todos os direitos reservados. Site fictício para fins didáticos.</small>
+  </footer>
+</body>
+</html>

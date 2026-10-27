@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Página Principal | Clínica Vida Plena</title>
+  <style>
+    :root { --verde:#1f5f5b; --verde-claro:#e4f1ee; --amarelo:#f2b84b; --texto:#22302f; --borda:#c5dad6; }
+    * { box-sizing: border-box; }
+    body { margin:0; font-family: Verdana, Geneva, sans-serif; color:var(--texto); background:#fbfdfc; line-height:1.65; }
+    nav { background:var(--verde); }
+    nav ul { list-style:none; margin:0 auto; padding:0; max-width:1100px; display:flex; flex-wrap:wrap; }
+    nav a { display:block; padding:16px 22px; color:#fff; text-decoration:none; font-weight:bold; }
+    nav a:hover, nav a:focus, nav a[aria-current="page"] { background:var(--amarelo); color:#1b2928; }
+    header img { display:block; width:100%; max-height:300px; object-fit:cover; }
+    header h1 { margin:0; padding:22px 20px; text-align:center; background:var(--verde-claro); font-family:Georgia, serif; font-size:2rem; color:var(--verde); }
+    main { max-width:1000px; margin:0 auto; padding:30px 20px; }
+    h2 { font-family:Georgia, serif; color:var(--verde); border-bottom:3px solid var(--amarelo); padding-bottom:6px; }
+    section { margin-bottom:34px; }
+    blockquote { margin:20px 0; padding:12px 20px; background:var(--verde-claro); border-left:6px solid var(--verde); font-style:italic; }
+    figure { margin:20px 0; text-align:center; }
+    figure img, iframe { max-width:100%; border:1px solid var(--borda); }
+    figcaption { font-size:.9rem; color:#4d6361; }
+    table { width:100%; border-collapse:collapse; margin:16px 0; }
+    caption { text-align:left; font-weight:bold; padding-bottom:8px; }
+    th, td { border:1px solid var(--borda); padding:12px; text-align:center; }
+    thead th { background:var(--verde); color:#fff; }
+    tbody th { background:var(--verde-claro); text-align:left; }
+    tbody tr:nth-child(even) td { background:#f3f9f8; }
+    form { max-width:620px; }
+    label { display:block; margin-top:14px; font-weight:bold; }
+    input[type="text"], input[type="email"], textarea { width:100%; padding:10px; border:1px solid var(--borda); border-radius:4px; font:inherit; }
+    button { margin:18px 10px 0 0; padding:11px 26px; border:0; border-radius:4px; font:inherit; font-weight:bold; cursor:pointer; background:var(--verde); color:#fff; }
+    button[type="reset"] { background:var(--amarelo); color:#1b2928; }
+    footer { background:var(--verde); color:#fff; padding:28px 20px; }
+    footer .rodape { max-width:1000px; margin:0 auto; display:flex; flex-wrap:wrap; gap:30px; justify-content:space-between; }
+    footer h2 { color:#fff; border:0; font-size:1.1rem; margin:0 0 6px; }
+    footer address { font-style:normal; }
+    footer a { color:var(--amarelo); }
+    footer small { display:block; text-align:center; margin-top:20px; }
+  </style>
+</head>
+<body>
+  <nav aria-label="Menu principal">
+    <ul>
+      <li><a href="index.html" aria-current="page">Página Principal</a></li>
+      <li><a href="sobre.html">Sobre a clínica</a></li>
+      <li><a href="horario.html">Horário de Atendimento</a></li>
+      <li><a href="contato.html">Contato</a></li>
+    </ul>
+  </nav>
+
+  <header>
+    <img src="https://placehold.co/1200x300/1f5f5b/ffffff?text=Clinica+Vida+Plena" alt="Fachada ilustrativa da Clínica Vida Plena com recepção acolhedora" width="1200" height="300">
+    <h1>Cuidado com saúde para toda a família</h1>
+  </header>
+
+  <main>
+    <section>
+      <h2>Bem-vindo à Clínica Vida Plena</h2>
+      <p>Somos uma clínica médica com foco em <strong>Clínica Geral</strong> e <strong>Pediatria</strong>, que oferece também Psicologia e Oftalmologia. Aqui, cada pessoa é ouvida com atenção, do primeiro bebê ao paciente mais experiente.</p>
+    </section>
+
+    <section>
+      <h2>Nossa missão</h2>
+      <p>Promover saúde e bem-estar com atendimento humano, acolhedor e baseado em evidências científicas.</p>
+    </section>
+
+    <section>
+      <h2>Nossos diferenciais</h2>
+      <ul>
+        <li>Consultas com tempo para conversar e tirar dúvidas;</li>
+        <li>Equipe multidisciplinar no mesmo endereço;</li>
+        <li>Sala de espera infantil e acessibilidade completa;</li>
+        <li>Agendamento rápido por telefone ou WhatsApp.</li>
+      </ul>
+    </section>
+
+    <section>
+      <h2>Especialidades</h2>
+      <ol>
+        <li>Clínica geral</li>
+        <li>Pediatria</li>
+        <li>Psicologia</li>
+        <li>Oftalmologia</li>
+      </ol>
+    </section>
+
+    <section>
+      <h2>Conheça nosso cuidado em vídeo</h2>
+      <figure>
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/dQw4w9WgXcQ?si=VKxJcskr4ZegamUk&amp;controls=0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+        <figcaption>Vídeo de exemplo. Troque o código do vídeo na URL pelo vídeo real da clínica.</figcaption>
+      </figure>
+      <p>Ouça também uma mensagem de boas-vindas:</p>
+      <audio controls>
+        <source src="https://www.soundhelix.com/examples/mp3/SoundHelix-Song-1.mp3" type="audio/mpeg">
+        Seu navegador não suporta o elemento de áudio.
+      </audio>
+    </section>
+  </main>
+
+  <footer>
+    <div class="rodape">
+      <div>
+        <h2>Clínica Vida Plena</h2>
+        <p>Cuidando de você e da sua família.<br>CNPJ fictício: 00.000.000/0001-00</p>
+      </div>
+      <div>
+        <h2>Contato</h2>
+        <address>
+          Telefone: <a href="tel:+551130000000">(11) 3000-0000</a><br>
+          Celular: <a href="tel:+5511900000000">(11) 90000-0000</a><br>
+          WhatsApp: <a href="https://wa.me/5511900000000">(11) 90000-0000</a><br>
+          E-mail: <a href="mailto:contato@vidaplena.example">contato@vidaplena.example</a>
+        </address>
+      </div>
+      <div>
+        <h2>Endereço</h2>
+        <address>Av. Paulista, 1000 – Bela Vista<br>São Paulo – SP, 01310-100</address>
+      </div>
+    </div>
+    <small>&copy; 2026 Clínica Vida Plena. Todos os direitos reservados. Site fictício para fins didáticos.</small>
+  </footer>
+</body>
+</html>
